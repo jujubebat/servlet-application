@@ -7,7 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-// 다음과 같이 요청 보낸다. http://localhost:8080/request-param?username=jujubebat&age=27&username=byungwook
+// 1. param으로 데이터 보내기 :  http://localhost:8080/request-param?username=jujubebat&age=27&username=byungwook
+// 2. form으로 데이터 보내기 : http://localhost:8080/basic/hello-form.html
 @WebServlet(name = "requestParamServlet", urlPatterns = "/request-param")
 public class RequestParamServlet extends HttpServlet {
 
